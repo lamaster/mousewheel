@@ -12,6 +12,7 @@
     function handler(event){
         event.type = 'mousewheel';
         event.wheelDelta = event.wheelDelta ? event.wheelDelta/120 : -(event.detail || 0)/3;
+        $.browser.mozilla && $.event.handle.apply(this, arguments);
     }
 
     $.event.special.mousewheel = {
