@@ -1,4 +1,11 @@
-// (c)2011 Astafiev Alexey <astafiev.alexey@gmail.com>
+/**
+ * jQuery 1.6+ mousewheel event support
+ *
+ * @author lamaster | http://github.com/lamaster
+ * @link http://github.com/lamaster/mousewheel
+ * @copyright (c)2011
+ * @license MIT
+ */
 ;(function($){
     var eventName = $.browser.mozilla ? 'DOMMouseScroll' : 'mousewheel'; // I don't know how to test it 
 
